@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #eeeeee;
+
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav{
+    background-color:#e4e4e4 ;
+}
+
+nav .logo p{
+    line-height: 70px;
+    float: left;
+    padding-left: 60px;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    color: #8675a9;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+    position: relative;
+}
+nav:after{
+    content:'';
+    clear:both;
+    display: table;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    line-height: 70px;
+    padding: 8px 15px;
+}
+i{
+   margin-left: 50px;
+}
+nav ul li a.one:hover{
+border-top:#8bc5c6 2px solid; ;
+}
+nav ul li a.two:hover{
+    border-right: #8bc5c6 2px solid;
+    border-left: #8bc5c6 2px solid;
+}
+nav ul li a:hover{
+    color:#8bc5c6;
+}
+nav ul ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .1s;}
+nav ul li:hover>ul{
+opacity: 1;
+visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0.3);
+}
+nav ul ul li:hover{
+    border-right: #8bc5c6 2px solid;
+    border-left: #8bc5c6 2px solid;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left:130px;
+}
+nav ul ul ul li a:hover{
+    color: #8675a9;
+}
