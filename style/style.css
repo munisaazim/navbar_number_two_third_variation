@@ -65,7 +65,8 @@ nav ul ul{
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    transition: top .1s;}
+    transition: top .1s;
+}
 nav ul li:hover>ul{
 opacity: 1;
 visibility: visible;
@@ -87,4 +88,94 @@ nav ul ul ul li{
 }
 nav ul ul ul li a:hover{
     color: #8675a9;
+}
+/*Respoinsivenes*/
+
+input{
+    display: none;
+}
+@media(max-width:806px){
+    .logo {
+        display:none;
+    }
+  nav ul {
+      margin-right: 0px;
+  }
+  @media(max-width:766px){
+    .icon{
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 27px;
+    }
+    .logo {
+        display: block;
+    } 
+    nav .logo p{
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul {
+        float: left;
+        margin-right: 0;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+    }
+    .show{
+        padding: 0 20px;
+        cursor: pointer;
+        line-height: 70px;
+    }
+    nav ul ul li{
+        display: block;
+        width: 100%;;
+    }
+    nav ul ul {
+        position: relative;
+        float: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .show+a, ul{
+        display: none;
+    }
+    [id^=btn]:checked+ul{
+        display: block;
+    }
+    .show:hover{
+        color: #8675a9;
+    }
+    nav ul ul li:hover{
+      border-right: none;
+      border-left: none;
+    }
+    .two, .more{
+        display: none;
+    }
+    nav ul ul li{
+        border: none;
+        float: left;
+        padding-left:20px;
+    }
+    nav ul ul li a{
+        border: #8675a9 2px solid;
+    }
+    nav ul ul li a:hover{
+        color: black;
+    }
+    nav ul ul li a:hover{
+        background:whitesmoke ;
+    }
+    nav ul ul ul li{
+        position: relative;
+        left:20px;
+        top: 10px;
+    }
+    nav ul li a.one:hover{
+        border-top: none;
+        color: #8675a9;
+    }
+}
 }
